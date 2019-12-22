@@ -1,0 +1,22 @@
+body-parser:
+    - Parse incoming request bodies in a middleware before your handlers,availbe under req.body property
+    - Can parse JSON, raw, text, URL encoded
+    - bodyParser.urlencoded({
+        extended: false;    // Set to false when need to use querystring library instead of qs
+    })
+Passport:
+    - Used for authentication.
+    - Uses concept of Strategies - set of extensible APIs - can range from verifying username,pwd 
+      ,delegating authentication using auth to federal authentication.
+    - You submit authentication request to Passport and it will provide you hooks to control
+      what occurs after authentication success or fails.
+    - Session:
+        -Passport provides persistant login session. In order for persistant session to work, use must be
+        serialized to the session and deserialized when subsequent  requests are made.
+    - Need to initialise before using
+    - Methods:
+            authenticate()
+            initialize()  
+
+Mangoose:
+    - MongoDB object modeling tool designed to work in an async env              
